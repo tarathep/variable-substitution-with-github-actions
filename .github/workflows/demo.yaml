@@ -14,3 +14,9 @@ jobs:
           username: tcranz
           password: ${{ secrets.PASSWORD }}
           url: https://github.com/${{github.repository}}
+    - run: |
+      echo ${{ env.first-name }}
+      echo ${{ env.last-name }}
+      echo ${{ env.username }}
+      echo ${{ env.password }}
+      echo ${{ env.url }}
